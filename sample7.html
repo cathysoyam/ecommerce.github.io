@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link href="xample7.css" rel="stylesheet" type="text/css"/>
+	<script src="scripts/xsample7.js" type="text/javascript"></script>
+</head>
+<body>
+
+<form name="frm_Records">
+	<h1 align="center" style="color:#660033;">Order Form</h1>
+	<hr>
+			<h4 align= "center">Please enter your name, billing address and shipping address.</h4>
+			<hr>
+			<h4 align= "center">Please enter a full name and address for billing purposes:</h4>
+			<ul align= "center">
+				First Name:
+				<input type="text" name="tb_fName" class="inputfields"  value="First Name" onFocus="clearInput(1)" onBlur="restoreValue(1)"/>
+				Last Name:
+				<input type="text" name="tb_lName" class="inputfields" value="Last Name"onFocus="clearInput(2)" onBlur="restoreValue(2)"/> <br>
+				<p id="response_txt"> </p> <br><br>
+				Address:
+				<input type="text" name="tb_add" class="inputfields" value="address"onFocus="clearInput(3)" onBlur="restoreValue(3)"/>
+				
+				ZIP Code:
+				<input type="text" name="tb_code"class="inputfields" value="zip code"onFocus="clearInput(4)" onBlur="restoreValue(4)"/>
+				<p id="response_txt2"> </p> 
+			</ul>
+			
+	
+			
+			<hr>
+			<h4  align= "center">Please enter the name/code of the product you want to purchase:<input type="text" class="txt" name="prod_name"/></h4>
+			<h4  align= "center">How would you like to pay for this product?<br>
+			<select align= "center">
+				<option>BDO</option>
+				<option>G-Cash</option>
+				<option>Paypal</option>
+				<option>BPI</option>
+				<option>Others</option>
+			</select>
+			</h4>
+			<h4 align= "center" >Others:<input type="text" name="others" /></h4>
+			<hr>
+		
+				<h4 align= "center"  > Filled out correctly then click "SUBMIT ORDER" when done <br>
+				
+				<input type="button" name="btn_Ok" value="SUBMIT ORDER" onClick="validateName()"/>
+				<hr>
+				<a href="home.html"><input type= "button" value="HOME"  ></a>
+				
+	
+</form>
+</body>
+</html>
+
